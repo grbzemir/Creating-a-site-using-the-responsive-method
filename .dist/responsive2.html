@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tasarim2</title>
+
+    <style>
+
+        *{
+            box-sizing : border-box;
+        }
+
+        .kutu
+        {
+            width: 25%;
+            background-color: red;
+            border: 1px solid black;
+            float: left;
+        }
+        
+        @media screen and (max-width: 900px)
+        {
+            .kutu
+            {
+                width: 33.33%;
+            }
+        }
+
+
+        @media screen and (max-width: 600px)
+        {
+            .kutu
+            {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 400px)
+        {
+            .kutu
+            {
+                width: 100%;
+            }
+        }
+
+       img{
+            max-width:100%;
+            
+       }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="kutu"></div>
+       <img src="images/manzara02.jpeg" alt="">
+       <div>
+    <div class="kutu"></div>
+        <img src="images/manzara02.jpeg" alt="">
+    </div>
+    <div class="kutu"></div>
+         <img src="images/manzara02.jpeg" alt="">
+        </div>
+    <div class="kutu"></div>
+         <img src="images/manzara02.jpeg" alt="">
+        </div>
+    <div class="kutu"></div>
+            <img src="images/manzara02.jpeg" alt="">
+            </div>
+    
+</body>
+</html>

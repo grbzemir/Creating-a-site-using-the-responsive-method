@@ -1,0 +1,192 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/* Navbar */
+
+html {
+    font-size: 7px;
+}
+
+
+
+body {
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    /*body içinde 1.6remlik bir font-size tanımladık. Bu sayede rem birimini kullanarak responsive bir tasarım yapabiliriz. */
+    /*yani 1opx çarpılmış hali ile 1.6remlik kullanıldı*/
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+    background-color: #333;
+
+}
+
+a{
+    text-decoration: none;
+    /*a etiketlerinin altını çizgiyi kaldırdık*/
+}
+
+p{
+    padding: 1.6rem 0;
+    /*p etiketlerinin iç boşluğunu 1.6rem yaptık*/
+
+}
+
+img{
+    width : 100%;
+    height: auto;
+    /*img etiketlerinin genişliğini 100% yaptık. Yani resimlerin ekranın tamamını kaplamasını sağladık.*/
+
+}
+
+.clearfix::after{
+    content: '';
+    display: block; /*tüm satırı kaplamalı*/
+    clear: both;
+    /*clearfix sınıfının içindeki elemanların float özelliğini temizledik*/
+}
+
+header{
+    height: 46rem; /* 460px */
+    
+    /*header etiketinin arka plan rengini belirledik*/
+}
+
+header .bg-image{
+
+    position: absolute;
+    background-image: url(images/1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+    /*biraz saydamlık ekledik opacity ile*/ 
+   
+
+}
+
+header h1{
+    padding: 12rem;
+    padding-bottom: 0;
+}
+
+.btn{
+
+    display: inline-block;
+    padding: 1.6rem 3.2rem;
+    background: #333;
+    color: #fff;
+    border: 1px solid #666;
+    margin: .5rem 0;
+    transition: all 0.4s;
+    
+   
+}
+
+.btn:hover{
+   
+    background-color: #fff;
+    color: #fff;
+}
+
+#section-a{
+    background-color: #eaeaea;
+    color: #333;
+    padding: 3.2rem 0;
+
+}
+
+#section-b{
+    padding: 2rem;
+    /*2opxlik bir padding ekledik*/
+
+}
+
+#section-b ul{
+   
+    list-style: none;
+
+}
+
+#section-b li{
+    background: #fff;
+    color:#333;
+    margin-bottom: 1.5rem;
+}
+
+.col-content{
+    padding: 1.5rem;
+}
+
+#section-c {
+    background-color:  #eaeaea;
+    color:#333;
+    padding: 5rem;
+}
+
+#section-d .box{
+
+    padding: 5rem;
+
+}
+
+#section-d .box:first-child{
+    background-color: darkslategray;
+
+}
+
+
+footer{
+    padding: 4rem;
+    background: black;
+
+}
+
+footer a {
+    color: yellowgreen;
+}
+
+@media screen and(min-width:800px)
+ 
+   {
+    html{
+        font-size: 9px;
+    }
+   }
+
+
+   @media screen and(min-width:1200px)
+
+   {
+    html{
+        font-size: 11px;
+    }
+
+
+    #section-b li{
+
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    .box{
+
+        width: 50%;
+        float:left;
+        
+    }
+
+   }
+
+
+  
+
